@@ -1,4 +1,3 @@
-
 function startCode(){
     let firstcode = document.getElementById("firstgo");
     let goone = document.getElementById("goone");
@@ -89,4 +88,11 @@ function startCode(){
       lack.style.width="0%"
     })
   }
-  startCode() 
+  startCode()
+  function live() { 
+        let lives = document.getElementById("lives")
+        lives.addEventListener("click",()=>{
+          alert("Online and offline classes. Contact live chart ")
+        })
+  } 
+  live()
