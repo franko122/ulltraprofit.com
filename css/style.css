@@ -1,0 +1,590 @@
+/* mobile starts */
+@media (max-width:500px) {
+    body{ 
+        padding: 0px; 
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: 0px;
+    }
+    .setings{
+        width: 100%; 
+    }
+    .adfirst{
+        border-radius: 10px;
+        margin: auto;
+        width:90%;
+        height:200px;
+        background: #fd961a;
+    }
+    .locat{
+        width:99%;
+    }
+    .onethat{
+        width: 95%;
+        height: 70px;
+        margin: auto;
+        color: white;
+        text-align: center;
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        background-color: #fd961a;
+    }
+    .depone{
+        width: 80%;
+        margin: auto;
+        border: #fd961a solid 3px; 
+        padding:5px;
+        color:#fd961a;   
+        margin-top: 10px;
+    }
+    .mounty{
+        width: 100%;
+        display: flex;
+        height: inherit;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .user{
+        width: 80%;
+        margin: auto;
+        height:60px; 
+    }
+    .seters{
+     height: 80px;   
+     width: 100%;
+     color:#fd961a;
+     border-radius: 10px;
+     outline: none; 
+     font: bold;
+     font-size: 20px;
+     padding: 10px;
+     border:solid 3px #fd961a;
+    }
+    .seter{
+     width: 100%;
+     color:#fd961a;
+     border-radius: 10px;
+     outline: none; 
+     font: bold;
+     font-size: 20px;
+     padding: 10px;
+     border:solid 3px #fd961a;
+    }
+    .megaty{
+        padding: 10px;
+        color:#fd961a;
+    }
+    .loaderty{
+        position:fixed;
+        height:100vh;
+        display:none;
+        z-index: 22;
+        transition:1s;
+        width: 100%;
+        background-color: white;
+    }
+    .formcontain{
+        width: 100%;
+        height: 100vh; 
+    }
+    .onput{
+        width: 94%; 
+        margin: auto; 
+    }
+    .firstput{
+        width:94%;
+        padding: 6px;
+        border-radius: 10px;
+        outline: none;
+        border: solid 3px #fd961a;
+        height:40px; 
+        font-size:20px;
+    }
+    .create{
+        color:#fd961a;
+        padding:15px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .onputer{  
+        display: flex;
+        align-items: center;
+    }
+    .up{
+        width: 95%;
+        padding: 10px;
+        background-color: #fd961a;
+        border: none;
+        color:white;
+        font:bold;
+        padding: 16px;
+    }
+    .uperty{
+        width:100%;
+        padding: 10px;
+        background-color: #fd961a;
+        border: none;
+        color:white;
+        font:bold;
+        padding: 16px;
+    }
+    .onputesr{
+       width:85%;
+       margin: auto;
+    }
+    .onputesrs{
+       width:50%;
+       margin: auto; 
+    }
+    .megarea{
+        border: #fd961a solid 3px ;
+        height: 100px;
+        padding: 20px;
+        width:86%;
+        margin: auto;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    .dashcontain{
+        width: 100%;
+        height: 100vh;
+    }
+    .ball{
+        padding:10px ;
+        color:#fd961a;
+        font-size: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .two{
+        width:15%;
+        display: flex; 
+        margin-right: 50px;
+    }
+    .topball{
+        width: 85%; 
+        border-radius: 10px;
+        margin: auto;
+        background-color: #fd961a;
+    }
+    .topballs{
+        width: 85%; 
+        border-radius: 10px;
+        margin: auto; 
+        border:3px solid #fd961a;
+        color: #fd961a;
+    }
+    .onert{
+        color:white;
+        font-size:30px; 
+        padding: 10px;
+        text-align: center;
+    }
+    .onert{
+        text-align: center;
+        margin: auto;
+    }
+    .withdraw{
+        width:50%;
+        padding:30px;
+        margin: auto; 
+        background-color: red;
+        justify-content: space-around;
+        display:flex;
+    }
+    .draws{
+        width: 50%;
+        padding: 10px; 
+        font: bold;
+        border-radius: 5px;
+        font-size:15px;
+        color:white;
+        background-color: #fd961a;
+        border: none;
+    }
+    .withdiv{
+        width: 95%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .rawlls{
+        width: 40%;
+        padding:15px;
+        border-radius: 5px;
+        color: #fd961a;
+        font-size:12px;
+        border:none;
+        background-color: white;
+    } 
+    .rawllse{
+        width: 40%;
+        padding:15px;
+        border-radius: 5px;
+        color: white;
+        font-size:12px;
+        border:none;
+        background-color: #fd961a;
+    }
+    .loinsu{
+        width:80%;
+        font-size:13px;
+        padding:10px;
+        color:white;
+        border-radius:4px;
+        text-align: center;
+        margin: auto;
+        background-color: rgba(10, 214, 10, 0.839);
+    }
+    .lister{
+        width:98%; 
+        justify-content: space-around;
+        margin: auto;
+        display: flex;
+        height: 50px; 
+    }
+    .mbers{
+        width:35%;
+        border: none;
+        border-radius: 10px;
+        color: #fd961a;
+        padding: 15px;
+        background-color: white;
+    }
+    .wall{
+        width:55%;
+        border: none;
+        padding: 10px;
+        color: #fd961a;
+        border-radius: 10px;
+        background-color: white;
+    }
+    .go{
+        width: 100%;
+        padding: 20px;
+        background-color: #fd961a;
+        border:none;
+        color: white;
+    }
+ }
+/*mobile ends */ 
+ /*tablet start */
+ @media (min-width:500px) { 
+    .mounty{
+        width: 100%;
+        display: flex;
+        height: inherit;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .depone{
+        width: 80%;
+        margin: auto;
+        border: #fd961a solid 3px; 
+        padding:5px;
+        color:#fd961a;   
+        margin-top: 10px;
+    }
+    .adfirst{
+        border-radius: 10px;
+        margin: auto;
+        width:90%;
+        height:200px;
+        background: #fd961a;
+    }
+    .lister{
+        width:98%; 
+        justify-content: space-around;
+        margin: auto;
+        display: flex;
+        height: 50px; 
+    }
+    .mbers{
+        width:35%;
+        border: none;
+        border-radius: 10px;
+        color: #fd961a;
+        padding: 15px;
+        background-color: white;
+    }
+    .wall{
+        width:55%;
+        border: none;
+        padding: 10px;
+        color: #fd961a;
+        border-radius: 10px;
+        background-color: white;
+    }
+    .loaderty{
+        position:fixed;
+        height:100vh;
+        display:none;
+        z-index: 22;
+        transition:1s;
+        width: 100%;
+        background-color: white;
+    }
+    .loinsu{
+        width:80%;
+        font-size:13px;
+        padding:10px;
+        color:white;
+        border-radius:4px;
+        text-align: center;
+        margin: auto;
+        background-color: rgba(10, 214, 10, 0.839);
+    }
+    .onputesrs{
+       width:50%;
+       margin: auto; 
+    }
+    .uperty{
+        width:100%;
+        padding: 10px;
+        background-color: #fd961a;
+        border: none;
+        color:white;
+        font:bold;
+        padding: 16px;
+    }
+    .seters{
+     height: 80px;   
+     width: 100%;
+     color:#fd961a;
+     border-radius: 10px;
+     outline: none; 
+     font: bold;
+     font-size: 20px;
+     padding: 10px;
+     border:solid 3px #fd961a;
+    }
+    .seter{
+     width: 100%;
+     color:#fd961a;
+     border-radius: 10px;
+     outline: none; 
+     font: bold;
+     font-size: 20px;
+     padding: 10px;
+     border:solid 3px #fd961a;
+    }
+    .megaty{
+        padding: 10px;
+        color:#fd961a;
+    }
+    .user{
+        width: 80%;
+        margin: auto;
+        height:60px; 
+    }
+    .setings{
+        width: 100%; 
+    }
+    .rawllse{
+        width: 40%;
+        padding:15px;
+        border-radius: 5px;
+        color: white;
+        font-size:12px;
+        border:none;
+        background-color: #fd961a;
+    }
+    .onethat{
+        width: 95%;
+        height: 70px;
+        margin: auto;
+        color: white;
+        text-align: center;
+        display: flex;
+        font-size: 20px; 
+        align-items: center;
+        justify-content: center;
+        background-color: #fd961a;
+    } 
+       body{ 
+        margin: auto;
+        padding: 0px;
+       }
+       .formcontain{
+        width:80%;
+       }   
+        body{ 
+        padding: 0px; 
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: 0px;
+    }
+    .formcontain{
+        width: 100%;
+        height: 100vh; 
+    }
+    .onput{
+        width: 94%; 
+        margin: auto; 
+    }
+    .firstput{
+        width:94%;
+        padding: 6px;
+        border-radius: 10px;
+        outline: none;
+        border: solid 3px #fd961a;
+        height:40px; 
+        font-size:20px;
+    }
+    .create{
+        color:#fd961a;
+        padding:15px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .onputer{  
+        display: flex;
+        align-items: center;
+    }
+    .up{
+        width: 95%;
+        padding: 10px;
+        background-color: #fd961a;
+        border: none;
+        color:white;
+        font:bold;
+        padding: 16px;
+    }
+    .onputesr{
+       width:85%;
+       margin: auto;
+    }
+    .megarea{
+        border: #fd961a solid 3px ;
+        height: 100px;
+        padding: 20px;
+        width:90%;
+        margin: auto;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    .dashcontain{
+        width: 60%;
+        margin: auto;
+        height: 100vh;
+    }
+    .ball{
+        padding:10px ;
+        color:#fd961a;
+        font-size: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .two{
+        width:15%;
+        display: flex; 
+        margin-right: 50px;
+    }
+    .topball{
+        width: 85%; 
+        border-radius: 10px;
+        margin: auto;
+        background-color: #fd961a;
+    }
+    .topballs{
+        width: 85%; 
+        border-radius: 10px;
+        margin: auto; 
+        border:3px solid #fd961a;
+        color: #fd961a;
+    }
+    .onert{
+        color:white;
+        font-size:30px; 
+        padding: 10px;
+        text-align: center;
+    }
+    .onert{
+        text-align: center;
+        margin: auto;
+    }
+    .withdraw{
+        width: 50%;
+        padding:30px;
+        margin: auto;
+    }
+    .draws{
+        width: 100%;
+        padding: 20px;
+        font: bold;
+        border-radius: 5px;
+        font-size: 20px;
+        color:white;
+        background-color: #fd961a;
+        border: none;
+    }
+    .withdiv{
+        width: 95%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .rawlls{
+        width: 40%;
+        padding:20px;
+        border-radius: 5px;
+        color: #fd961a;
+        font-size: 20px;
+        border:none;
+        background-color: white;
+    }
+ }
+/* tablet ends */
+
+/* start of laptop */
+@media (min-width:1024px) {
+    .formcontain{
+        width: 50%;
+        margin: auto;
+    }
+    .dashcontain{
+        width:50%;
+    }
+    .onethat{
+        width: 95%;
+        height: 70px;
+        margin: auto;
+        color: white;
+        text-align: center;
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        background-color: #fd961a;
+    }
+}
+/* ends of laptop */
+
+
+@media (min-width:2560px) { 
+    .formcontain{
+        width:30%;
+        margin: auto; 
+    }
+    .dashcontain{
+        width:50%;
+    }
+    .onethat{
+        width: 95%;
+        height: 70px;
+        margin: auto;
+        color: white;
+        text-align: center;
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        background-color: #fd961a;
+    }
+}
