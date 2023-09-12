@@ -461,10 +461,13 @@
         border: #fd961a solid 3px ;
         height: 100px;
         padding: 20px;
-        width:90%;
+        width:88%;
         margin: auto;
         border-radius: 10px;
         font-size: 20px;
+    }
+    .we{
+        width:8%;
     }
     .dashcontain{
         width: 60%;
@@ -538,6 +541,10 @@
         font-size: 20px;
         border:none;
         background-color: white;
+    }  
+     .formcontain{
+        width:80%;
+        margin: auto;
     }
  }
 /* tablet ends */
