@@ -95,4 +95,4 @@ function startCode(){
           alert("Online and offline classes. Contact live chart ")
         })
   } 
-  live()
+  live()    
