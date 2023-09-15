@@ -92,7 +92,7 @@ function startCode(){
   function live() { 
         let lives = document.getElementById("lives")
         lives.addEventListener("click",()=>{
-          alert("Online and offline classes. Contact live chart ")
+          alert("Online and offline classes. Contact live chat ")
         })
   } 
   live()    
