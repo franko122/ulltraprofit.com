@@ -15,24 +15,8 @@ function startCode(){
     let dexgo = document.getElementById("dexgo") 
     let firt = document.getElementById("firt")
     let sec = document.getElementById("sec")
-    let mains = document.getElementById("mains")
-    let charter = document.getElementById("charter")
-    let charts = document.getElementById("charts")
-    let dollar = document.getElementById("dollar") 
-    charts.addEventListener("click",()=>{
-      charter.style.backgroundColor="inherit"
-      charts.style.backgroundColor=" #fd961a"
-      charts.style.border="none"
-      charter.style.border="solid white 2px"
-      dollar.style.height="0px" 
-    })    
-    charter.addEventListener("click",()=>{ 
-      charts.style.backgroundColor="inherit"
-      charter.style.border="none"
-      charts.style.border="solid white 2px"
-      charter.style.backgroundColor="#fd961a"
-      dollar.style.height="800px" 
-    })
+    let mains = document.getElementById("mains")  
+ 
     firt.addEventListener("click",()=>{
         mains.style.height="400px"
         firt.style.display="none"
