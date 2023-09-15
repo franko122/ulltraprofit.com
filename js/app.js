@@ -73,7 +73,7 @@ function startCode(){
   function live() { 
         let lives = document.getElementById("lives")
         lives.addEventListener("click",()=>{
-          alert("Online and offline classes. Contact live chat ")
+          alert("Online classes. Contact live chat ")
         })
   } 
   live()    
