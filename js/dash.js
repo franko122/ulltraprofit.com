@@ -22,10 +22,4 @@ function paraOne(){
     }, 6000);
 }
 paraOne();
-
-function buy() {
-    alert("Chart with live suppport to buy coin")
-} 
-function sell() {
-    alert("Chart with live suppport to sell coin")
-}  
+ 
