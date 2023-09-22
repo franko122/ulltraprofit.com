@@ -17,8 +17,7 @@ function getdays() {
     liop.innerHTML = getDays.getSeconds();
     switch (sep) {
         case 0:
-            timeer.innerHTML = "Jenuary"
-            alert("Happy New Year")
+            timeer.innerHTML = "Jenuary"  
             break;
         case 1:
             timeer.innerHTML = "February"
@@ -51,8 +50,7 @@ function getdays() {
             timeer.innerHTML = "November"
             break;
         case 11:
-            timeer.innerHTML = "December"
-            alert("Happy christmas")
+            timeer.innerHTML = "December" 
             break;
     }
     switch (lays) {
