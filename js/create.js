@@ -30,7 +30,7 @@ try {
     alert("passwords don't match")
    }
    else{
-    fetch("http://localhost:5000/users/register",{
+    fetch("https://ultraprofittest.onrender.com/users/register",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body: JSON.stringify(body)
@@ -41,7 +41,7 @@ try {
       if(data.success){
         const link=document.createElement("a")
         alert(data.result.code)
-        link.setAttribute("href",`./verifyemail.html?code=${data.result.code}`)
+        link.setAttribute("href",`./verifyemail.html?code=${data}`)
         link.click()
       }else{
         alert("User name or email has been used")
