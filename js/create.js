@@ -41,8 +41,8 @@ try {
       console.log(data)
       if(data.success){
         const link=document.createElement("a")
-        alert(data.result.code)
-        link.setAttribute("href",`${appEntry}/verifyemail.html?code=${data}`)
+        link.setAttribute("href",`${appEntry}/verifyemail.html?code=${data.result.code}`)
+        localStorage.setItem("prof_Id",data.result._id)
         link.click()
       }else{
         alert("User name or email has been used") 
