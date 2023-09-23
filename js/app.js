@@ -16,20 +16,29 @@ function startCode(){
     let firt = document.getElementById("firt")
     let sec = document.getElementById("sec")
     let mains = document.getElementById("mains")  
- 
+   if(firt){
     firt.addEventListener("click",()=>{
-        mains.style.height="400px"
-        firt.style.display="none"
-        sec.style.display="block"
-    })
+      mains.style.height="400px"
+      firt.style.display="none"
+      sec.style.display="block"
+  })
+
+   }
+   if(sec){
     sec.addEventListener("click",()=>{
       mains.style.height="0px"
       firt.style.display="block"
       sec.style.display="none"
-    })
+    })    
+   }
+    
+   if(trede){
     setTimeout(() => {
       trede.style.width="100%" 
     },500);  
+   }
+   
+    
      setTimeout(() => {
       dexgo.style.width="0%" 
     },3000);
