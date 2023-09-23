@@ -5,6 +5,15 @@
        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         margin: 0px;
     }
+    .mentos{ 
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.637);
+        z-index:22;
+        overflow: hidden;
+        display: flex; 
+        width: 0%;
+         height:100vh;
+    }
     .setings{
         width: 100%; 
     }
@@ -272,7 +281,16 @@
  }
 /*mobile ends */ 
  /*tablet start */
- @media (min-width:500px) { 
+ @media (min-width:500px) {
+    .mentos{          
+        z-index:22;
+        overflow: hidden;
+        display: flex; 
+        width:0%; 
+        height:100vh;
+        position:fixed;  
+        margin-left:-80px;
+    } 
     .mounty{
         width: 100%;
         display: flex;
@@ -464,9 +482,6 @@
         border-radius: 10px;
         font-size: 20px;
     }
-    .we{
-        width:16%;
-    }
     .dashcontain{
         width: 60%;
         margin: auto;
@@ -479,6 +494,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .jahh{
+       margin-left:13px;
     }
     .two{
         width:15%;
@@ -549,10 +567,13 @@
 
 /* start of laptop */
 @media (min-width:1024px) {
+    .mentos{ 
+        margin-left:-259px; 
+    } 
     .formcontain{
         width: 50%;
         margin: auto;
-    }
+    } 
     .dashcontain{
         width:50%;
     }
@@ -577,6 +598,30 @@
         width:30%;
         margin: auto; 
     }
+    .mentos{ 
+        margin-left:759px; 
+    } 
+    .dashcontain{
+        width:50%;
+    }
+    .onethat{
+        width: 95%;
+        height: 70px;
+        margin: auto;
+        color: white;
+        text-align: center;
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        background-color: #fd961a;
+    }
+}
+@media (min-width:5420px) { 
+    .formcontain{
+        width:30%;
+        margin: auto; 
+    } 
     .dashcontain{
         width:50%;
     }
