@@ -30,7 +30,7 @@ try {
     alert("passwords don't match")
    }
    else{
-    fetch("https://ultraprofittest.onrender.com/users/register",{
+    fetch("https://ultraprofit-backend.onrender.com/users/register",{
     mode:"no-cors",  
     method:"POST",
       headers:{"Content-Type":"application/json"},
