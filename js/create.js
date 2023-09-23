@@ -1,7 +1,7 @@
   let hidden=true
   const form=  document.querySelector("form")
   const passwordInputs= document.querySelectorAll(".password_input_div > .oneputs")
-  const appEntry="https://ulltraprofit-com.vercelapp"
+  const appEntry="https://ulltraprofit-com.vercel.app"
  
    function showPassword(){
     console.log("hello")
