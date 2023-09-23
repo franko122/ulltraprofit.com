@@ -31,7 +31,8 @@ try {
    }
    else{
     fetch("https://ultraprofittest.onrender.com/users/register",{
-      method:"POST",
+    mode:"no-cors",  
+    method:"POST",
       headers:{"Content-Type":"application/json"},
       body: JSON.stringify(body)
     })
