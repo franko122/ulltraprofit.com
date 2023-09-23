@@ -45,12 +45,12 @@ try {
         link.setAttribute("href",`./verifyemail.html?code=${data}`)
         link.click()
       }else{
-        alert("User name or email has been used")
+        alert("User name or email has been used") 
       }
     })
    }
 } catch (error) {
-  
+  console.log(error)
 }
  
  console.log(body);
