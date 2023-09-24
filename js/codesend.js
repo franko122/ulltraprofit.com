@@ -5,7 +5,7 @@ const apiEntry="https://ultraprofit-backend.onrender.com"
 const params= new URLSearchParams(window.location.search)
 
 const profid= params.get("profid")
-console.log("profid",profid)
+console.log("profid",profid.split("style")[0])
 
 const resetPassword=()=>{
  const newPassword=password.value

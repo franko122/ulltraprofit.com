@@ -2,6 +2,7 @@
   const form=  document.querySelector("form")
   const passwordInputs= document.querySelectorAll(".password_input_div > .oneputs")
   const appEntry="https://ulltraprofit-com.vercel.app"
+  const uploadButton= document.getElementById("upbutton")
  
    function showPassword(){
     console.log("hello")
@@ -21,6 +22,8 @@
      form.addEventListener("submit",(e)=>{
     e.preventDefault();
     const  body={}
+    uploadButton.innerHTML="Loading."
+    uploadButton.setAttribute("disabled","true")
 const allInputs= document.querySelectorAll("input")
 try {
    allInputs.forEach(inp=>{
