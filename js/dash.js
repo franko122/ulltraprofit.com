@@ -22,10 +22,17 @@ function paraOne(){
     }, 6000);
 }
 paraOne();
-
-function buy() {
-    alert("Chart with live suppport to buy coin")
-} 
-function sell() {
-    alert("Chart with live suppport to sell coin")
-}  
+function myFunction() {
+    // Get the text field
+    var copyText = document.getElementById("myInput");
+  
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+  
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value);
+    
+    // Alert the copied text
+    alert("Copied referral code " + copyText.value);
+  }

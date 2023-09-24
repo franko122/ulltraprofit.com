@@ -15,40 +15,47 @@ function startCode(){
     let dexgo = document.getElementById("dexgo") 
     let firt = document.getElementById("firt")
     let sec = document.getElementById("sec")
-    let mains = document.getElementById("mains")
-    let charter = document.getElementById("charter")
-    let charts = document.getElementById("charts")
-    let dollar = document.getElementById("dollar")
-    let naira = document.getElementById("naira")
-    charts.addEventListener("click",()=>{
-      charter.style.backgroundColor="inherit"
-      charts.style.backgroundColor=" #fd961a"
-      charts.style.border="none"
-      charter.style.border="solid white 2px"
-      dollar.style.height="0px"
-      naira.style.height="840px"
-    })    
-    charter.addEventListener("click",()=>{ 
-      charts.style.backgroundColor="inherit"
-      charter.style.border="none"
-      charts.style.border="solid white 2px"
-      charter.style.backgroundColor="#fd961a"
-      dollar.style.height="800px"
-      naira.style.height="0px"
+    let mains = document.getElementById("mains")  
+    let conf = document.getElementById("conf")
+    let onecon = document.getElementById("conone")
+    let pumpo2 = document.getElementById("pumpo2")
+    let pumpo= document.getElementById("pumpo") 
+    let okay = document.getElementById("okay") 
+       okay.addEventListener("click",()=>{ 
+         pumpo.style.display="none"
+        })
+      pumpo2.addEventListener("click",()=>{
+        pumpo.style.display="flex" 
+        pumpo.style.alignItems="center" 
+        pumpo.style.justifyContent="center" 
+        conf.style.display="none" 
+      })
+    onecon.addEventListener("click",()=>{
+        conf.style.display="block" 
     })
+   if(firt){
     firt.addEventListener("click",()=>{
-        mains.style.height="400px"
-        firt.style.display="none"
-        sec.style.display="block"
-    })
+      mains.style.height="400px"
+      firt.style.display="none"
+      sec.style.display="block"
+  })
+
+   }
+   if(sec){
     sec.addEventListener("click",()=>{
       mains.style.height="0px"
       firt.style.display="block"
       sec.style.display="none"
-    })
+    })    
+   }
+    
+   if(trede){
     setTimeout(() => {
       trede.style.width="100%" 
     },500);  
+   }
+   
+    
      setTimeout(() => {
       dexgo.style.width="0%" 
     },3000);
@@ -92,7 +99,7 @@ function startCode(){
   function live() { 
         let lives = document.getElementById("lives")
         lives.addEventListener("click",()=>{
-          alert("Online and offline classes. Contact live chart ")
+          alert("Online classes. Contact live chat ")
         })
   } 
   live()    

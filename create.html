@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./assets/img/download (1).png" type="image/x-icon">
 </head>
+<style>
+    .oneputs{
+        width: 85%;
+        outline: none;
+        border:none;
+        cursor: pointer;
+        padding: 13px;
+        font-size: 18px;
+    }
+    .layer{ 
+        cursor: pointer;
+        display:flex;
+        border:3px solid #fd961a;
+        align-items: center;
+        width: 95%;
+        padding:3px;
+        border-radius: 10px;
+    }
+    
+</style>
 <body>  
     <!-- Start of form  -->
     <section class="formcontain">
@@ -17,32 +37,41 @@
         </div>
         <form action="verifyemail.html" > 
             <div class="onput"> 
-               <input type="text" placeholder="User name: Eg:franklin33" required class="firstput">
+               <input type="text" id="userName" placeholder="User name: Eg:franklin33" required class="firstput">
             </div>
             <br>
             <div class="onput"> 
-                <input type="text" placeholder="Email:" required class="firstput">
+                <input type="text" id="email" placeholder="Email:" required class="firstput">
              </div>
              <br>
              <div class="onput"> 
-                 <input type="number" placeholder="Password:" required class="firstput">
+                <div class="password_input_div layer">
+                    <input type="password" id="password" placeholder="Password:" required class="oneputs">
+                    <svg style="color:#fd961a;" xmlns="http://www.w3.org/2000/svg" onclick="showPassword()" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                      </svg>
+                </div>
               </div>
-              <br>
+              <br>  
               <div class="onput"> 
-                  <input type="number" placeholder="Confirm Password:" required class="firstput">
+                 <div class="password_input_div layer">
+                     <input type="password" id="password_2" placeholder="Repeat-password:" required class="oneputs">
+                     <!-- <svg style="color:#fd961a;" xmlns="http://www.w3.org/2000/svg" onclick="showPassword()" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                         <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                         <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                       </svg> -->
+                 </div>
                </div>
                <br>
-               <div class="onput"> 
-                   <input type="text" placeholder="TRX(trc20) wallet address:" required class="firstput">
+               <div class="onput" > 
+                   <input id="wallet_id" type="text" placeholder="TRX(trc20) wallet address:" required class="firstput">
                 </div> 
                 <br> 
                 <div class="onput"> 
-                    <input type="text" placeholder="Referal link (Optional):" class="firstput">
+                    <input type="text" id="referrer" placeholder="Referal link (Optional):" class="firstput">
                  </div>  
-                 <br> 
-                 <div class="onput">  
-                    <textarea name="" id="" cols="30" rows="10" class="megarea" placeholder="(optional) Bank account for withdrawal and for nigerians ONLY"></textarea>
-                </div>  
+                 <br>  
                 <div  style="width:90%; text-align: center; padding:10px; margin: auto;"> 
                     <input type="checkbox" required class="firstputs">
                     <b style="margin-left:1px; padding:10px;"> Accept our<a href="./terms.html"> terms of services</a> </b>
@@ -57,7 +86,7 @@
                               <b style="margin: 0px; color:#fd961a;" >/</b>
                               <h1   style="margin: 0px; color:#fd961a;" id="timer"></h1>  
                               <b style="margin: 0px; color:#fd961a;" >/</b>
-                              <h1  style="margin: 0px; color:#fd961a;"  id="twenty"></h1> 
+                              <h1 style="margin: 0px; color:#fd961a;"  id="twenty"></h1> 
                  </div> 
                  <br> 
                 <div class="onputesr"> 
@@ -74,7 +103,8 @@
     </section>
     <!-- Ends of form  --> 
     <script src="//code.tidio.co/2ykx2vvwh48vjjtbou2vyuoiwjtd4pcx.js" async></script>
-    <script src="./js/app.js"></script>
+    <!-- <script src="./js/app.js"></script> -->
     <script src="./js/time.js"></script>
+    <script src="./js/create.js"></script>
 </body>
 </html>

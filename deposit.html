@@ -7,9 +7,111 @@
     <link rel="shortcut icon" href="./assets/img/download (1).png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css"> 
 </head>
-<body>
-    <div class="">
-          
-    </div>
+<body class="depoli">  
+    <section id="pumpo" style=" display:none; background-color: rgba(0, 0, 0, 0.589); width: 100%; height: 100vh; position: fixed;">
+         <div style="width: 70%; padding:10px; border-radius: 10px; background-color: white;">
+            <div style="font-size: 18px; padding:5px; color:#fd961a; text-align: center;">
+                <b>   
+                    Deposit requested
+                </b>        
+                   <p>  
+                    Your trade will start once your payment is confirmed  
+                </p>           
+                <p>  
+                    Status: Checking your deposit
+             </p>      
+             <div id="okay" style="color:white; text-align: center; padding:20px; margin:auto; width:50%; height: 20px; background-color:#fd961a;">
+                  <b>
+                    Ok
+                  </b> 
+             </div>
+             <br>
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffa200}</style><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>                        
+            </div>
+         </div>
+    </section>
+    <section id="conf" class="depoli2" style=" display:none; background-color: white; width: 100%; height: 100vh; position: fixed;">
+        <div class="create">
+            <b>  
+                Confirm Deposit
+            </b>                                      
+        </div>
+        <div class="onput"> 
+            <input type="Amount"  placeholder="Amount Deposited:" required class="firstput">
+         </div>
+         <br>
+         <div class="onput"> 
+            <input type="text" id=" " placeholder="Your tron(trx) wallet address" required class="firstput">
+         </div>
+         <br>    
+           <div style="text-align: center; color:#fd961a;">
+            <b>
+                Date
+            </b>
+           </div> 
+           <div style="  display: flex; justify-content: space-around; align-items: center; width: 60%; margin: auto; color:black;">
+                        <h1  style="margin: 0px; color:#fd961a;"  id="timeer"></h1> 
+                        <b style="margin: 0px; color:#fd961a;" >/</b>
+                        <h1   style="margin: 0px; color:#fd961a;" id="timer"></h1>  
+                        <b style="margin: 0px; color:#fd961a;" >/</b>
+                        <h1 style="margin: 0px; color:#fd961a;"  id="twenty"></h1> 
+           </div> 
+           <br> 
+         <div id="pumpo2" style="color:white; text-align: center; padding:20px; margin:auto; width:50%; height: 20px; background-color:#fd961a;">
+              <b>
+                 Confirm
+              </b> 
+         </div>  
+    </section>
+    <SECTION class="depocontain">
+        <div class="create">
+            <b>  
+                Make a deposit 
+            </b>
+            <br>
+            <br>
+            <div style="font-size:20px;">Scan the Tron wallet Qr code or copy the company wallet address and make your depsoit</div>
+        </div>
+        <div style="width:50%; margin:auto;">
+            <img src="./assets/img/q code .jpg" style="width: 100%;" alt="">
+        </div>
+        <br>
+        <div style="justify-content: center; background-color: rgba(128, 128, 128, 0.459); border-radius: 10px; width: 80%; display: flex; align-items: center; font-size: 13px; height: 50px; margin:auto;">
+            TQmWEp5nzbGZKPMJLugynRRzUdbw8E5VEP
+        </div>
+        <br>
+        <br> 
+        <div style="text-align: center;">
+           <span style="color:red;"> Note:</span>
+           You only send tron(trx) to this wallet address,Then click on Confirm
+           to confirm your deposit 
+        </div>
+        <br>
+        <br> 
+        <div id="conone" style="color:white; text-align: center; padding:20px; margin:auto; width:50%; height: 20px; background-color:#fd961a;">
+             <b>
+                Confirm
+             </b> 
+        </div>       
+        <br>
+        <br> 
+        <div style="text-align: center;">
+            <b>
+                 <a  style="font-size:12px; color: #fd961a;" href="./login.html">Login</a>
+                /           
+                <a  style="font-size:12px; color: #fd961a;" href="./create.html">Create Account</a>
+                /
+                <a  style="font-size:12px; color: #fd961a;" href="./index.html">Home</a>
+            </b>
+        </div> 
+            <div style="text-align: center; font-size: 15px;">
+                <p>
+                   All rights reserved &copy; ulltraprofit.com
+                </p>
+            </div>
+    </SECTION>
 </body>
+<script src="./js/app.js"></script>
+<script src="./js/time.js"></script>
+<script src="//code.tidio.co/2ykx2vvwh48vjjtbou2vyuoiwjtd4pcx.js" async></script>
 </html>

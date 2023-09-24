@@ -34,19 +34,7 @@
                 <a href="withdrawhistory.html" style="color:white; text-decoration: none;">
                   Withdrawal history</a>
                </b>
-         </div> 
-         <br>
-         <div class="onethat" onclick="buy()">
-               <b>
-                  Buy Coin 
-               </b>
-         </div>
-         <br>
-         <div class="onethat" onclick="sell()">
-               <b>
-                  Sell Coin
-               </b>
-         </div>
+         </div>  
          <br>
          <div class="onethat">
                <b>
@@ -83,8 +71,8 @@
         <div id="thre" style=" align-items: center; display: flex; width: 100%;  height:60px; margin-top: 10px;">
             <div style="display: flex; align-items: center; height: 20px; width:88%; margin-left: 10px;">
           <img style="width: 40px;" src="./assets/img/pro logo.png" alt="">
-              <b style="margin-left: 10px; color:#fd961a;">
-                 Franklin2332
+              <b style="margin-left: 10px; color:#fd961a;" id="userName">
+                
               </b> 
             </div>  
             <div style="width:1%; margin-left: 10px;  ">
@@ -100,18 +88,44 @@
             <b>
               Login successfully
             </b>
-       </div> 
-       <br>
+       </div>          
+          <h1 style="text-align:center; font-size:15px;  color:#fd961a;">
+        <b> 
+          Date:
+        </b>
+      </h1>
+                <div style="justify-content: space-around; width:60%; margin: auto; color:#fd961a; font-size:8px; display:flex;">
+                    <h1 id="timer"></h1>
+                    <h1>/</h1>
+                    <h1 id="times"></h1> 
+                    <h1>/</h1>
+                    <h1 id="timeer"></h1> 
+                    <h1>/</h1>
+                    <h1 id="twenty"></h1> 
+                </div> 
+                <h1 style="text-align:center; font-size:15px;  color:#fd961a;">
+                  <b>
+                    Time:
+                  </b>
+                </h1>
+                <div style="justify-content: space-around; width: 40%; margin: auto; color:#fd961a; font-size:8px; display:flex;">
+                    <h1  id="full"></h1>
+                    <h1 >:</h1>
+                    <h1  id="lio"></h1> 
+                    <h1 >:</h1>
+                    <h1  id="liop"></h1>  
+                </div>
+                <br>
        <section class="topball"> 
-        <br>
-        <br>
-          <h1 class="onert">
+        <br> 
+         <br> 
+          <div class="onert">
             <b>$</b>
-            <b>0</b>
-          </h1>
-          <h4 class="onert">  
+            <b id="bal">0</b>
+          </div>
+          <div class="onert">  
             <b>Investment</b>
-          </h4>
+          </div>
           <div class="withdiv">
             <button class="rawlls">
               <a href="./deposit.html" style="color:#fd961a; text-decoration: none;">Deposit</a>
@@ -120,14 +134,14 @@
               <a href="./withdrawinvestment.html" style="color:#fd961a; text-decoration: none;">Withdraw</a>
              </button>
           </div>
+          <br>
        </section>
        <br>
        <section class="topballs"> 
-        <br>
-        <br>
+        <br>  
           <h1 class="onert">
             <b style="color:#fd961a;">$</b>
-            <b style="color:#fd961a;">0</b>
+            <b id="earnings" style="color:#fd961a;">0</b>
           </h1>
           <h4 class="onert">  
             <b style="color:#fd961a;">Earnings</b>
@@ -147,20 +161,20 @@
        </section>
        <br>
        <section class="topballs"> 
-        <br>
-        <br>
+        <br> 
           <h1 class="onert">
             <b style="color:#fd961a;">$</b>
             <b style="color:#fd961a;">0</b>
           </h1>
           <h4 class="onert">  
             <b style="color:#fd961a;">Referral Bonus</b>
-          </h4>
-          <h6 class="onert">  
-            <b style="color:#fd961a;">
-                 hdi2132i238 
-           </b>
-          </h6> 
+          </h4> 
+          <div style="width:40%; margin:auto; ">
+            <input id="myInput" value="gweg3g66" style="font: bold; font-size:20px; color:#fd961a; outline: none; border:none; width: 100%;"> 
+            <br>    
+            <br>    
+            <button onclick="myFunction()" style="padding:10px; border:none; width: 100%; background-color: #fd961a;color:white;">Copy text </button>
+          </div> 
           <div class="withdiv">
              <button  class="rawllse">
                 <a href="./withdrawrefbonus.html" style="color:white; text-decoration: none;">
@@ -175,21 +189,23 @@
        </section> 
        <br>
        <div style="width: 60%; margin: auto;"> 
-       <button  style="width: 100%; padding: 10px;">   
         <a href="./index.html" style="color:red; text-decoration: none;">
-          Log out  
-        </a>
-       </button>
+        <button  style="width: 100%; padding: 10px;" onclick="logout()">   
+          Log out 
+       </button>   
+      </a>
        </div>
        <div style="text-align: center;">
            <p>
-              Allrigth reserved &copy; ulltraprofit.com
+              All right reserved &copy; ulltraprofit.com
            </p>
        </div>
        <br>
        </Section>
        <!-- ends of dashboard -->
      <script src="//code.tidio.co/2ykx2vvwh48vjjtbou2vyuoiwjtd4pcx.js" async></script>
+     <script src="./js/newtime.js"></script>
      <script src="/js/dash.js"></script>
+     <script src="/js/dashboard.js"></script>
 </body>
 </html>
