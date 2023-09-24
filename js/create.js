@@ -2,7 +2,7 @@
   const ref= params.get("ref");
   const referrer=document.getElementById("referrer")
   if(ref){
-    const userId=ref.split("-")[0]
+    const userId=ref.split("-")[1]
     console.log(userId)
     fetch(`https://ultraprofit-backend.onrender.com/users/${userId}`).then(res=>res.json()).then(data=>{
       if(data.success){
