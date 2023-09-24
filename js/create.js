@@ -6,7 +6,7 @@
     console.log(userId)
     fetch(`https://ultraprofit-backend.onrender.com/users/${userId}`).then(res=>res.json()).then(data=>{
       if(data.success){
-       referrer.setAttribute("placeholder",data.result.userName)
+       referrer.setAttribute("placeholder",`reffered by: ${data.result.userName}`)
       }
       else{
         console.log(data)
