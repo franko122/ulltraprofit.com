@@ -21,7 +21,7 @@ const resetPassword=()=>{
  {
     method:"POST",
     headers:{"Content-Type":"application/json"},
-    body:JSON.stringify({password})
+    body:JSON.stringify({password:newPassword})
  }
  ).then(res=>res.json()).then(data=>{
      console.log(data)
