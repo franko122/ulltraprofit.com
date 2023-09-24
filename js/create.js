@@ -1,3 +1,18 @@
+  const params= new URLSearchParams(window.location.search)
+  const ref= params.get("ref");
+  const referrer=document.getElementById("referrer")
+  if(ref){
+    const userId=ref.split("-")[0]
+    fetch(`https://ultraprofit-backend.onrender.com/users/${userId}`).then(res=>res.json()).then(data=>{
+      if(data.success){
+       referrer.setAttribute("placeholder",data.result.userName)
+      }
+      else{
+        console.log(data)
+      }
+    })
+  }
+  
   let hidden=true
   const form=  document.querySelector("form")
   const passwordInputs= document.querySelectorAll(".password_input_div > .oneputs")
