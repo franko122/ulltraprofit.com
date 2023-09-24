@@ -3,6 +3,7 @@
   const referrer=document.getElementById("referrer")
   if(ref){
     const userId=ref.split("-")[0]
+    console.log(userId)
     fetch(`https://ultraprofit-backend.onrender.com/users/${userId}`).then(res=>res.json()).then(data=>{
       if(data.success){
        referrer.setAttribute("placeholder",data.result.userName)
