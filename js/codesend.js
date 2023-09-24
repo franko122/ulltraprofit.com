@@ -6,6 +6,8 @@ const params= new URLSearchParams(window.location.search)
 
 const profid= params.get("profid")
 const userId=profid.split("style")[0]
+console.log(userId)
+
 
 const resetPassword=()=>{
  const newPassword=password.value
