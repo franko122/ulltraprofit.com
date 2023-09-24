@@ -18,7 +18,7 @@ if(data.success){
             UserNameElement.innerHTML=data.result.userName;
             bal.innerHTML=data.result.balance
             earnings.innerHTML=data.result.earnings
-            myInp.value=`${appEntry}$ref=${data.result.userName}-${prof_Id}`
+            myInp.value=`${appEntry}ref=${data.result.userName}-${prof_Id}`
             return data
         }
         }
