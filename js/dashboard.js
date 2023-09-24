@@ -2,7 +2,9 @@ const prof_Id=localStorage.getItem("prof_Id")
 const UserNameElement=document.getElementById("userName")
 const bal=document.getElementById("bal")
 const earnings=document.getElementById("earnings")
+const myInp= document.geteElementById("myInput")
 console.log(UserNameElement)
+const appEntry="https://ulltraprofit-com.vercel.app/create.html?"
 if(!prof_Id){
     window.location.assign("./index.html")
 }
@@ -16,6 +18,7 @@ if(data.success){
             UserNameElement.innerHTML=data.result.userName;
             bal.innerHTML=data.result.balance
             earnings.innerHTML=data.result.earnings
+            myInp.value=data.result._id
             return data
         }
         }
