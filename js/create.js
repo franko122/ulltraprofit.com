@@ -50,6 +50,9 @@ try {
     alert("passwords don't match")
    }
    else{
+    if(userId){
+      body.referrer=userId
+    }
     fetch("https://ultraprofit-backend.onrender.com/users/register",{
      
     method:"POST",
