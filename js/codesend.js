@@ -5,7 +5,7 @@ const apiEntry="https://ultraprofit-backend.onrender.com"
 const params= new URLSearchParams(window.location.search)
 
 const profid= params.get("profid")
-console.log("profid",profid.split("style")[0])
+const userId=profid.split("style")[0]
 
 const resetPassword=()=>{
  const newPassword=password.value
@@ -13,8 +13,30 @@ const resetPassword=()=>{
  if(newPassword!=newPassword_2){
         alert("Passwords don't match")
  }else{
- fetch(`${apiEntry}/users`)
+    if(profid){
+
+        fetch(`${apiEntry}/users/update/${userId}`,
+ {
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({password})
  }
+ ).then(res=>res.json()).then(data=>{
+     console.log(data)
+    if(data.success){
+     alert("Detail updated successfully")
+    }
+    else{
+        alert("An error occured, try again later")
+    }
+ })
+    }
+    else{
+        alert("PLease Check your email for instructions")
+    }
+ 
+ }
+
 }
 form.addEventListener("submit",(e)=>{
     e.preventDefault()
