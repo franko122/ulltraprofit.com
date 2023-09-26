@@ -1,11 +1,11 @@
   const params= new URLSearchParams(window.location.search)
   const ref= params.get("ref");
   const referrer=document.getElementById("referrer")
-  const getUserDetails=async()=>{
+  
     
+  let userId
     if(ref){
       userId=ref.split("-")[1]
-      let userId
       console.log(userId)
       fetch(`https://ultraprofit-backend.onrender.com/users/tk`,{
       method:"POST",
@@ -91,6 +91,5 @@
     })
     
     
-  }
+  
 
-  getUserDetails
