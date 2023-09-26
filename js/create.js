@@ -1,9 +1,9 @@
   const params= new URLSearchParams(window.location.search)
   const ref= params.get("ref");
-  const referrer=document.getElementById("referrer")
+  const referrerInput=document.getElementById("referrer")
   
-let referreDetails={}    
-  let userId
+    
+  let ref_Id="none"
     if(ref){
       userId=ref.split("-")[1]
       console.log(userId)
@@ -15,8 +15,8 @@ let referreDetails={}
       }
     }).then(res=>res.json()).then(data=>{
       if(data.success){
-        userId= data.result._id
-       referrer.setAttribute("placeholder",`reffered by: ${data.result.userName}`)
+         ref_Id= data.result._id
+       referrerInput.setAttribute("placeholder",`reffered by: ${data.result.userName}`)
       }
       else{
         console.log(data)
@@ -61,8 +61,8 @@ let referreDetails={}
         alert("passwords don't match")
       }
       else{
-        if(userId){
-          body.referrer=userId
+        if(ref_Id!=="none"){
+          body.referrer=ref_Id
         }
         fetch("https://ultraprofit-backend.onrender.com/users/register",{
           
@@ -76,7 +76,7 @@ let referreDetails={}
               const link=document.createElement("a")
               link.setAttribute("href",`${appEntry}/verifyemail.html?code=${data.result.code}`)
               localStorage.setItem("prof_Id",data.result.tk)
-              // link.click()
+              link.click()
             }else{
               alert("User name or email has been used") 
             }
