@@ -1,5 +1,4 @@
-const params= new URLSearchParams(window.location.search)
-const code=params.get("code")
+const code=localStorage.getItem("code")
 const button=document.querySelector("button")
 const input=document.querySelector("input")
 button.addEventListener("click",(e)=>{

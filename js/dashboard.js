@@ -4,7 +4,7 @@ const bal=document.getElementById("bal")
 const earnings=document.getElementById("earnings")
 const myInp= document.getElementById("myInput")
 console.log(UserNameElement)
-const appEntry="https://ulltraprofit-com.vercel.app/create.html?"
+const appEntry="https://ulltraprofit.onrender.com/"
 if(!prof_Id){
     window.location.assign("./index.html")
 }
@@ -24,7 +24,7 @@ if(data.success){
             UserNameElement.innerHTML=data.result.userName;
             bal.innerHTML=data.result.balance
             earnings.innerHTML=data.result.earnings
-            myInp.value=`${appEntry}ref=${data.result.userName}-${prof_Id}`
+            myInp.value=`${appEntry}/create.html?ref=${data.result.userName}-${data.result._id}`
             return data
         }
         }
@@ -36,6 +36,6 @@ console.log(newUser)
 }
 function logout(){
     
-    localStorage.removeItem("prof_Id")
+    localStorage.removeItem("prof_id")
     window.location.assign("./index.html")
 }
