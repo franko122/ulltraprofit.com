@@ -1,4 +1,4 @@
-const prof_Id=localStorage.getItem("prof_Id")
+const prof_Id=localStorage.getItem("prof_id")
 const UserNameElement=document.getElementById("userName")
 const bal=document.getElementById("bal")
 const earnings=document.getElementById("earnings")
@@ -14,7 +14,7 @@ const newUser=fetch(`https://ultraprofit-backend.onrender.com/users/tk`,{
     method:"POST",
     headers:{
         "Content-Type":"application/json",
-        "token":localStorage.getItem("prof_Id")
+        "token":localStorage.getItem("prof_id")
     }
 }).then(res=>res.json()).then(data=>{
     console.log(data)   
