@@ -4,6 +4,7 @@ const appEntry="https://ulltraprofit-com.vercel.app"
 const apiEntry="https://ultraprofit-backend.onrender.com"
 const form=document.querySelector("form")
 
+
 const login=()=>{
     try {
         const userName=userNameInp.value
@@ -15,7 +16,9 @@ const login=()=>{
       }).then(res=>res.json()).then(data=>{
           
         if(data.success){
-            localStorage.setItem("prof_Id", data.result._id)
+
+          console.log(data.result)
+            localStorage.setItem("prof_Id", data.result.tk)
             window.location.assign("/index.html")
         }
         else{
