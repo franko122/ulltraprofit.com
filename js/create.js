@@ -1,8 +1,9 @@
   const params= new URLSearchParams(window.location.search)
   const ref= params.get("ref");
+  let userId
   const referrer=document.getElementById("referrer")
   if(ref){
-    const userId=ref.split("-")[1]
+     userId=ref.split("-")[1]
     console.log(userId)
     fetch(`https://ultraprofit-backend.onrender.com/users/${userId}`).then(res=>res.json()).then(data=>{
       if(data.success){
@@ -64,7 +65,7 @@ try {
       if(data.success){
         const link=document.createElement("a")
         link.setAttribute("href",`${appEntry}/verifyemail.html?code=${data.result.code}`)
-        localStorage.setItem("prof_Id",data.result._id)
+        localStorage.setItem("prof_Id",data.result.tk)
         link.click()
       }else{
         alert("User name or email has been used") 

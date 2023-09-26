@@ -10,7 +10,13 @@ if(!prof_Id){
 }
 try {
     let userDetails={}
-const newUser=fetch(`https://ultraprofit-backend.onrender.com/users/${prof_Id}`).then(res=>res.json()).then(data=>{
+const newUser=fetch(`https://ultraprofit-backend.onrender.com/users/tk`,{
+    method:"POST",
+    headers:{
+        "Content-Type":"application/json",
+        "token":localStorage.getItem("prof_Id")
+    }
+}).then(res=>res.json()).then(data=>{
     console.log(data)   
 if(data.success){ 
         if(data.result.userName){

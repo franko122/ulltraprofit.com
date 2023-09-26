@@ -36,59 +36,61 @@
                 Confirm Deposit
             </b>                                      
         </div>
-        <div class="onput"> 
-            <input type="Amount"  placeholder="Amount Deposited:" required class="firstput">
-         </div>
-         <br>
-         <div class="onput"> 
-            <input type="text" id=" " placeholder="Your tron(trx) wallet address" required class="firstput">
-         </div>
-         <br>    
-           <div style="text-align: center; color:#fd961a;">
-            <b>
-                Date
-            </b>
-           </div> 
-           <div style="  display: flex; justify-content: space-around; align-items: center; width: 60%; margin: auto; color:black;">
-                        <h1  style="margin: 0px; color:#fd961a;"  id="timeer"></h1> 
-                        <b style="margin: 0px; color:#fd961a;" >/</b>
-                        <h1   style="margin: 0px; color:#fd961a;" id="timer"></h1>  
-                        <b style="margin: 0px; color:#fd961a;" >/</b>
-                        <h1 style="margin: 0px; color:#fd961a;"  id="twenty"></h1> 
-           </div> 
-           <br> 
-         <div id="pumpo2" style="color:white; text-align: center; padding:20px; margin:auto; width:50%; height: 20px; background-color:#fd961a;">
-              <b>
-                 Confirm
-              </b> 
-         </div>  
-    </section>
-    <SECTION class="depocontain">
-        <div class="create">
-            <b>  
-                Make a deposit 
-            </b>
+    
+
+            <div class="onput"> 
+                <input id="amount" type="Amount"  placeholder="Amount Deposited:" required class="firstput">
+            </div>
             <br>
+            <div class="onput"> 
+                <input id="walletId" type="text" id=" " placeholder="Your tron(trx)  wallet address" required class="firstput">
+            </div>
+            <br>    
+            <div style="text-align: center; color:#fd961a;">
+                <b>
+                    Date
+                </b>
+            </div> 
+            <div style="  display: flex; justify-content: space-around; align-items: center; width: 60%; margin: auto; color:black;">
+                <h1  style="margin: 0px; color:#fd961a;"  id="timeer"></h1> 
+                <b style="margin: 0px; color:#fd961a;" >/</b>
+                <h1   style="margin: 0px; color:#fd961a;" id="timer"></h1>  
+                <b style="margin: 0px; color:#fd961a;" >/</b>
+                <h1 style="margin: 0px; color:#fd961a;"  id="twenty"></h1> 
+            </div> 
+            <br> 
+            <div onclick="checkDeposit()" id="pumpo2" style="color:white; text-align: center; padding:20px; margin:auto; width:50%; height: 20px; background-color:#fd961a;">
+                <b>
+                    Confirm
+                </b> 
+            </div>  
+        </section>
+        <SECTION class="depocontain">
+            <div class="create">
+                <b>  
+                    Make a deposit 
+                </b>
+                <br>
+                <br>
+                <div style="font-size:20px;">Scan the Tron wallet Qr code or copy the company wallet address and make your depsoit</div>
+            </div>
+            <div style="width:50%; margin:auto;">
+                <img src="./assets/img/q code .jpg" style="width: 100%;" alt="">
+            </div>
             <br>
-            <div style="font-size:20px;">Scan the Tron wallet Qr code or copy the company wallet address and make your depsoit</div>
-        </div>
-        <div style="width:50%; margin:auto;">
-            <img src="./assets/img/q code .jpg" style="width: 100%;" alt="">
-        </div>
-        <br>
-        <div style="justify-content: center; background-color: rgba(128, 128, 128, 0.459); border-radius: 10px; width: 80%; display: flex; align-items: center; font-size: 13px; height: 50px; margin:auto;">
+            <div style="justify-content: center; background-color: rgba(128, 128, 128, 0.459); border-radius: 10px; width: 80%; display: flex; align-items: center; font-size: 13px; height: 50px; margin:auto;">
             TQmWEp5nzbGZKPMJLugynRRzUdbw8E5VEP
         </div>
         <br>
         <br> 
         <div style="text-align: center;">
            <span style="color:red;"> Note:</span>
-           You only send tron(trx) to this wallet address,Then click on Confirm
+           You only send tron(trx)  trc20 network to this wallet address,Then click on Confirm
            to confirm your deposit 
         </div>
         <br>
         <br> 
-        <div id="conone" style="color:white; text-align: center; padding:20px; margin:auto; width:50%; height: 20px; background-color:#fd961a;">
+        <div  id="conone" style="color:white; text-align: center; padding:20px; margin:auto; width:50%; height: 20px; background-color:#fd961a;">
              <b>
                 Confirm
              </b> 
@@ -114,4 +116,5 @@
 <script src="./js/depo.js"></script>
 <script src="./js/time.js"></script>
 <script src="//code.tidio.co/2ykx2vvwh48vjjtbou2vyuoiwjtd4pcx.js" async></script>
+<script src="js/deposit.js"></script>
 </html>
