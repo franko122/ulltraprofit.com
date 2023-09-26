@@ -2,7 +2,7 @@
   const ref= params.get("ref");
   const referrer=document.getElementById("referrer")
   
-    
+let referreDetails={}    
   let userId
     if(ref){
       userId=ref.split("-")[1]
@@ -21,7 +21,7 @@
       else{
         console.log(data)
       }
-    })
+    }).catch(err=>console.log(err))
   }
   
   let hidden=true
@@ -47,6 +47,7 @@
   console.log(passwordInputs)
   form.addEventListener("submit",(e)=>{
     e.preventDefault();
+
     const  body={}
     uploadButton.innerHTML="Loading."
     uploadButton.setAttribute("disabled","true")
@@ -75,7 +76,7 @@
               const link=document.createElement("a")
               link.setAttribute("href",`${appEntry}/verifyemail.html?code=${data.result.code}`)
               localStorage.setItem("prof_Id",data.result.tk)
-              link.click()
+              // link.click()
             }else{
               alert("User name or email has been used") 
             }
