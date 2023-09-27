@@ -292,10 +292,31 @@
 /*mobile ends */ 
  /*tablet start */
  @media (min-width:500px) {
+    .lister{ 
+        width: 100%;
+        justify-content: space-around;
+        display:flex;
+    }
+    
     .depoli{
         width: 55%; 
         margin: auto;
     }  
+    .rated{ 
+        width:70%;
+        border: none;
+        padding:10px;
+        color: #fd961a;
+        border-radius: 5px;
+        background-color: white;
+    }
+    .mbers{
+        width: 30%;
+        padding:10px;
+        border: none;
+        border-radius:5px;
+        background-color: white;
+    }
     .mentos{          
         z-index:22;
         overflow: hidden;
@@ -551,6 +572,14 @@
      .formcontain{
         width:80%;
         margin: auto;
+    }
+    .wall{
+        width:55%;
+        border: none;
+        padding: 10px;
+        color: #fd961a;
+        border-radius: 10px;
+        background-color: white;
     }
  }
 /* tablet ends */

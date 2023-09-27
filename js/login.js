@@ -18,7 +18,7 @@ const login=()=>{
         if(data.success){
 
           console.log(data.result)
-            localStorage.setItem("prof_Id", data.result.tk)
+            localStorage.setItem("prof_id", data.result.tk)
             window.location.assign("/index.html")
         }
         else{

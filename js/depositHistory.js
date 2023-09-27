@@ -19,7 +19,7 @@ const apiEntry="https://ultraprofit-backend.onrender.com"
     method:"POST",
     headers:{
         "Content-Type":"application/json",
-        "token":localStorage.getItem("prof_Id")
+        "token":localStorage.getItem("prof_id")
     }
  }).then(res=>res.json()).then(data=>{
     console.log(data)

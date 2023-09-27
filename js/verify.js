@@ -4,7 +4,7 @@ const input=document.querySelector("input")
 button.addEventListener("click",(e)=>{
     e.preventDefault()
     if(code==input.value){
-  window.location.assign("https://ulltraprofit-com.vercel.app/dashboard.html")
+  window.location.assign("/dashboard.html")
 
     }
     else{

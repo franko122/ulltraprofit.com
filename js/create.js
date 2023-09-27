@@ -78,7 +78,7 @@ form.addEventListener("submit",e=>{
       body:JSON.stringify(body)
     }).then(res=>res.json()).then(data=>{
       console.log(data)
-      if(data.success){
+      if(data.success&&(typeof(data.result!=="string"))){
         localStorage.setItem("prof_id",data.result.tk)
         localStorage.setItem("code",data.result.code)
         window.location.assign("./verifyemail")

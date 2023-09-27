@@ -6,6 +6,29 @@
         <title> Ulltraprofit.com</title>
         <link rel="shortcut icon" href="./assets/img/download (1).png" type="image/x-icon">
         <link rel="stylesheet" href="./css/style.css"> 
+        <style>
+            .approve{
+                width: 70%; 
+                text-align: center;
+                 margin: auto; color:white; 
+                padding:8px;
+                background-color: rgb(17, 255, 17);
+                margin:20px auto;
+            }
+            .decline{
+                width: 70%;
+                text-align: center;
+                margin: auto; 
+                color:white;
+                padding:8px;
+                background-color: rgb(255, 0, 0);
+                margin:20px auto;
+
+            }
+            .invinsible{
+                display:none;
+            }
+        </style>
     </head>
 <body>
     <div class="create">
@@ -13,7 +36,7 @@
             New deposits
         </b>
     </div>
-    <div class="depone"> 
+    <div class="depone invinsible"> 
         <div class="mounty">
         <b> 
             UserName:
@@ -75,14 +98,15 @@
        </b>
     </div> 
       <br>  
-      <div style="width: 70%; text-align: center; margin: auto; color:white; padding:8px; background-color: rgb(17, 255, 17);">
+      <div class="approve">
           Approve
       </div>
       <br>  
-      <div style="width: 70%; text-align: center; margin: auto; color:white; padding:8px; background-color: rgb(255, 0, 0);">
+      <div class="decline" >
           Decline
       </div>
       <br> 
    </div>
+   <script src="/js/newdeposi.js"></script>
 </body>
 </html>
