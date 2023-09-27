@@ -1,6 +1,6 @@
 const passwordInp= document.getElementById("password")
 const userNameInp= document.getElementById("userName")
-const appEntry="https://ulltraprofit-com.vercel.app"
+const appEntry="ulltraprofit.com"
 const apiEntry="https://ultraprofit-backend.onrender.com"
 const form=document.querySelector("form")
 const button=document.querySelector("button")
