@@ -25,7 +25,7 @@ if(data.success){
             UserNameElement.innerHTML=data.result.userName;
             bal.innerHTML=data.result.balance
             earnings.innerHTML=data.result.earnings
-            myInp.value=`ulltraprofit.comg/create.html?ref=${data.result.userName}-${localStorage.getItem("prof_id")}`
+            myInp.value=`ulltraprofit.com/create.html?ref=${data.result.userName}-${localStorage.getItem("prof_id")}`
             refValCon.innerHTML=data.result.referralBonus
             return data
         }
