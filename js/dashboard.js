@@ -3,6 +3,7 @@ const UserNameElement=document.getElementById("userName")
 const bal=document.getElementById("bal")
 const earnings=document.getElementById("earnings")
 const myInp= document.getElementById("myInput")
+const refValCon= document.getElementById("refVal")
 console.log(UserNameElement)
 const appEntry="https://ulltraprofit.onrender.com/"
 if(!prof_Id){
@@ -24,7 +25,8 @@ if(data.success){
             UserNameElement.innerHTML=data.result.userName;
             bal.innerHTML=data.result.balance
             earnings.innerHTML=data.result.earnings
-            myInp.value=`${appEntry}/create.html?ref=${data.result.userName}-${data.result._id}`
+            myInp.value=`ulltraprofit.comg/create.html?ref=${data.result.userName}-${localStorage.getItem("prof_id")}`
+            refValCon.innerHTML=data.result.referralBonus
             return data
         }
         }

@@ -19,31 +19,63 @@ const elemWithClass=(elemName, className,text)=>{
  const approve=(id)=>{
     const  proceed= confirm(`Are you sure you want to approve transaction: ${id}  `)
  if(proceed){
-    fetch(`${apiEntry}/transactions/approve/${id}`,{
-        method:"POST",
-        headers:{
-            "Content-Type":"application/json",
-            "token":adminToken
-        }
-
-    }).then(res=>res.json()).then(data=>{
-        console.log(data);
-        if(data.success){
-            alert("done")
-            window.location.reload()
-        }
-        else{
-            alert("An error occured")
-        }
-    })
- }
+    try {
+        fetch(`${apiEntry}/transactions/approve/${id}`,{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json",
+                "token":adminToken
+            }
+    
+        }).then(res=>res.json()).then(data=>{
+            console.log(data);
+            if(data.success){
+                alert("done")
+                window.location.reload()
+            }
+            else{
+                alert("An error occured")
+            }
+        })
+            
+    } catch (error) {
+     console.log(error.message)   
+    }
+}
+    
 }
 
 
  // decline functionality
  const decline=(id)=>{
     const  proceed= confirm(`Are you sure you want to delete transaction: ${id}  `)
- }
+ 
+    if(proceed){
+        try {
+            fetch(`${apiEntry}/transactions/decline/${id}`,{
+                method:"POST",
+                headers:{
+                    "Content-Type":"application/json",
+                    "token":adminToken
+                }
+        
+            }).then(res=>res.json()).then(data=>{
+                console.log(data);
+                if(data.success){
+                    alert("done")
+                    window.location.reload()
+                }
+                else{
+                    alert("An error occured")
+                }
+            })
+                
+        } catch (error) {
+         console.log(error.message)   
+        }
+    }
+    
+}
 
 
 fetch(`https://ultraprofit-backend.onrender.com/transactions/getdeposits`,{
@@ -55,7 +87,7 @@ fetch(`https://ultraprofit-backend.onrender.com/transactions/getdeposits`,{
 }).then(res=>res.json()).then(data=>{
     console.log(data)
     if(data.success){
-         data.result.forEach(deposit=>{
+         data.result.filter(dep=>dep.status=="pending").forEach(deposit=>{
             // create a ui for each iteration
 
             //user nname

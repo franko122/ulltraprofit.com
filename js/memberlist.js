@@ -2,7 +2,28 @@
 
 const adminToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTFiN2M3NTcxNTM5M2U2NWUwNjA2NSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY5NTY1OTk3NX0._0tksCLPPyFcpksw5AfNoMFfG15SXVTPq0MV8x1PzqE"
 const apiEntry="https://ultraprofit-backend.onrender.com"
-
+const messageBtn=document.getElementById("messageBtn")
+const messageBody=document.getElementById("messageBody")
+messageBtn.addEventListener("click",(e)=>{
+    e.preventDefault()
+    fetch(`${apiEntry}/users/notice`,{
+        method:"post",
+        headers:{
+            "Content-Type":"application/json",
+            "token":adminToken
+        },
+        body:JSON.stringify({message:messageBody.value})
+    }).then(res=>res.json()).then(data=>{
+        console.log(data)
+        if(data.success){
+            alert("Message sent successfully")
+            window.location.reload()
+        }else{
+            alert("An error occured")
+        }
+    })
+})
+console.log(messageBody,messageBtn)
 const createElement=(elementName,className="")=>{
     const thisElement= document.createElement(elementName)
      thisElement.setAttribute("class",className)

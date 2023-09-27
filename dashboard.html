@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="./css/style.css"> 
 </head>
 <body> 
+         <!-- rates starts  -->
+         <div style="z-index: 5; width: 100% ;  position: fixed; display: flex; align-items: center; justify-content: space-around;">
+          <div id="cr-widget-marquee"
+          data-coins="bitcoin,ethereum,tether,ripple,cardano"
+          data-theme="dark"
+          data-show-symbol="true"
+          data-show-icon="true"
+          data-show-period-change="true"
+          data-period-change="24H"
+          data-api-url="https://api.cryptorank.io/v0"
+        > 
+          <script src="https://cryptorank.io/widget/marquee.js"></script>
+        </div>
+          </div>
+      <!-- rate end -->
+      <br>
+      <br>
   <!-- satrt of drop  --> 
     <section id="mani" class="loaderty"> 
       <div id="lose" style="text-align: right; color:red; font-size:30px; padding: auto; padding: 10px;">
@@ -51,21 +68,12 @@
          </div> 
          <br>
     </section>
-  <!-- ends of drop -->
-  <!-- start of rates  -->
-    <div style="z-index:5; width: 100%; height: 70px; background-color: rgb(123, 104, 104); position: fixed; display: flex; align-items: center; padding: 5px; justify-content: space-around;">
-    
-  </div>
-  <!-- End of rates -->
+  <!-- ends of drop --> 
   <!-- start of loading -->
     <section id="dexgos" style="z-index: 222; display: flex; justify-content: center; align-items: center; width: 100%;  height: 100vh; background-color: rgb(11,15,18); position: fixed; z-index: 2;">
         <img src="./assets/img/download (1).png" alt="">
      </section> 
-       <!-- ends of loading  -->
-       <br>
-       <br> 
-       <br> 
-       <br> 
+       <!-- ends of loading  --> 
        <!-- start of dashboard -->
        <Section class="dashcontain">  
         <div id="thre" style=" align-items: center; display: flex; width: 100%;  height:60px; margin-top: 10px;">
@@ -164,7 +172,7 @@
         <br> 
           <h1 class="onert">
             <b style="color:#fd961a;">$</b>
-            <b style="color:#fd961a;">0</b>
+            <b id="refVal" style="color:#fd961a;">0</b>
           </h1>
           <h4 class="onert">  
             <b style="color:#fd961a;">Referral Bonus</b>

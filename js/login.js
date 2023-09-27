@@ -3,10 +3,13 @@ const userNameInp= document.getElementById("userName")
 const appEntry="https://ulltraprofit-com.vercel.app"
 const apiEntry="https://ultraprofit-backend.onrender.com"
 const form=document.querySelector("form")
-
+const button=document.querySelector("button")
+console.log(button)
 
 const login=()=>{
     try {
+      button.setAttribute("disabled",true)
+      button.innerHTML="Loading .."
         const userName=userNameInp.value
         const password=passwordInp.value
       fetch(`${apiEntry}/users/login`,{
@@ -14,7 +17,8 @@ const login=()=>{
         headers:{"Content-Type":"application/json"},
         body: JSON.stringify({userName,password})
       }).then(res=>res.json()).then(data=>{
-          
+        button.setAttribute("disabled",false)
+        button.innerHTML="Sign in"
         if(data.success){
 
           console.log(data.result)
