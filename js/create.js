@@ -4,6 +4,8 @@ const form= document.querySelector("form")
 const inputs= document.querySelectorAll("input")
 const referrer= document.getElementById("referrer")
 const body={}
+ const upButton=document.getElementById("upbutton")
+ console.log(upButton)
 const  passwordInp=document.getElementById("password")
 const  password_2Inp=document.getElementById("password_2")
 let passwordHidden=true
@@ -56,6 +58,8 @@ if(ref){
 
 form.addEventListener("submit",e=>{
   e.preventDefault()
+  upButton.setAttribute("disabled",true)
+  upButton.innerHTML="Loading"
   const allInputs=document.querySelectorAll("input")
   allInputs.forEach(inp=>{
     if((inp!=referrer)&&(inp!=checkBox)){
@@ -78,6 +82,8 @@ form.addEventListener("submit",e=>{
       body:JSON.stringify(body)
     }).then(res=>res.json()).then(data=>{
       console.log(data)
+      upButton.setAttribute("disabled",false)
+  upButton.innerHTML="Sign up"
       if(data.success&&(typeof(data.result!=="string"))){
         localStorage.setItem("prof_id",data.result.tk)
         localStorage.setItem("code",data.result.code)
