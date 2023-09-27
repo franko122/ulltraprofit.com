@@ -1,6 +1,6 @@
 const token= localStorage.getItem("prof_id")
 const body=document.querySelector(".formcontain")
-const adminToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTFiN2M3NTcxNTM5M2U2NWUwNjA2NSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY5NTY1OTk3NX0._0tksCLPPyFcpksw5AfNoMFfG15SXVTPq0MV8x1PzqE"
+const adminToken=localStorage.getItem("prof_id")
 console.log(token)
 const elemWithClass=(elementName,className,text)=>{
     const  elem=document.createElement(elementName)

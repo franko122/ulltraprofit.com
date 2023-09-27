@@ -1,6 +1,6 @@
 const body = document.querySelector("body")
 const apiEntry="https://ultraprofit-backend.onrender.com"
-const adminToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTFiN2M3NTcxNTM5M2U2NWUwNjA2NSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY5NTY1OTk3NX0._0tksCLPPyFcpksw5AfNoMFfG15SXVTPq0MV8x1PzqE"
+const adminToken=localStorage.getItem("prof_id")
 
 
 // creates an element with a classNamer and inner Text
