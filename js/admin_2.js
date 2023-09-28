@@ -2,6 +2,7 @@ const totalInvestments=document.querySelector("#totalInvestments")
 const totalEarnings=document.querySelector("#totalEarnings")
 const adminToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTFiN2M3NTcxNTM5M2U2NWUwNjA2NSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY5NTY1OTk3NX0._0tksCLPPyFcpksw5AfNoMFfG15SXVTPq0MV8x1PzqE"
 const apiEntry="https://ultraprofit-backend.onrender.com"
+const  logoutBtn=document.getElementById("logoutBtn")
 
 console.log(totalInvestments)
 try {
@@ -21,3 +22,7 @@ try {
 } catch (error) {
     console.log(error)
 }
+logoutBtn.addEventListener("click",()=>{
+    localStorage.removeItem("prof_id")
+    window.location.assign('index.html')
+})

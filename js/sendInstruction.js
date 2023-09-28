@@ -15,7 +15,7 @@ const sendInstructions=()=>{
             if(data.success){
                 alert("we sent you an email")
                 
-                window.location.assign("./login.html")
+                window.location.assign("login.html")
             }else{
                 alert("We couldn't find any user with this email ")
             }

@@ -7,7 +7,7 @@ const refValCon= document.getElementById("refVal")
 console.log(UserNameElement)
 const appEntry="https://ulltraprofit.onrender.com/"
 if(!prof_Id){
-    window.location.assign("./index.html")
+    window.location.assign("index.html")
 }
 try {
     let userDetails={}
@@ -39,5 +39,5 @@ console.log(newUser)
 function logout(){
     
     localStorage.removeItem("prof_id")
-    window.location.assign("./index.html")
+    window.location.assign("index.html")
 }

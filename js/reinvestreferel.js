@@ -7,7 +7,7 @@ let loaded=false
 let canProceed=false
 let userDetails={}
 if(!token){
-    window.location.assign("/create.html")
+    window.location.assign("create.html")
  
 }else{
   fetch(`${apiEntry}/users/tk`,{
@@ -85,7 +85,7 @@ const  newBalance=userDetails.balance+Number(amountValue)
       console.log(data)
       if(data.success){
         alert("done")
-        window.location.assign("/dashboard.html")
+        window.location.assign("dashboard.html")
         
       }else{
         alert("An error occured")

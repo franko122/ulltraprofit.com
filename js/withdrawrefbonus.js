@@ -66,7 +66,7 @@ withdrawBtn.addEventListener("click",async()=>{
             }).then(res=>res.json()).then((data)=>{
                 if(data.success){
                     alert("Your application has been sent successfully")
-                    window.location.assign('/dashboard.html')
+                    window.location.assign('dashboard.html')
                 }else{
 
                 }

@@ -35,7 +35,7 @@ const showPassword=()=>{
 
 if(ref){
   const ref_token= ref.split("-")[1]
-  fetch(`https://ultraprofit-backend.onrender.com/users/${ref_token}`,{
+  fetch(`https://ultraprofit-backend.onrender.com/users/tk`,{
     method:"POST",
     headers:{
 
@@ -87,7 +87,7 @@ form.addEventListener("submit",e=>{
       if(data.success&&(typeof(data.result!=="string"))){
         localStorage.setItem("prof_id",data.result.tk)
         localStorage.setItem("code",data.result.code)
-        window.location.assign("./verifyemail")
+        window.location.assign("verifyemail.html")
       }
       else{
         alert("Username or email has been used ")

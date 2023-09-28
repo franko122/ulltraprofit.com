@@ -23,7 +23,13 @@ const login=()=>{
 
           console.log(data.result)
             localStorage.setItem("prof_id", data.result.tk)
-            window.location.assign("/index.html")
+            if(data.result.isAdmin===true){
+              window.location.assign('admin.html')
+            }
+            else{
+
+              window.location.assign("index.html")
+            }
         }
         else{
             alert("Invalid user name or password")

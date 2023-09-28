@@ -23,11 +23,11 @@ else{
             body:JSON.stringify({amount:amountVal,wallet_id:walletVal})
         }).then(res=>res.json()).then(data=>{
             if(data.success){
-                window.location.assign("/dashboard.html")
+                window.location.assign("dashboard.html")
             }
             else{
                 alert("An error occured please try again later ")
-                window.location.assign("/dashboard.html")
+                window.location.assign("dashboard.html")
                 
             }
         })
