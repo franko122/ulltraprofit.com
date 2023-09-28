@@ -35,18 +35,11 @@ const showPassword=()=>{
 
 if(ref){
   const ref_token= ref.split("-")[1]
-  fetch(`https://ultraprofit-backend.onrender.com/users/tk`,{
-    method:"POST",
-    headers:{
-
-      "Content-Type":"application/json",
-      "token":ref_token
-    }
-  }).then(res=>res.json().then(data=>{
+  fetch(`https://ultraprofit-backend.onrender.com/users/${ref_token}`).then(res=>res.json().then(data=>{
     console.log(data)
     if(data.success){
      body.referrer= data.result._id
-     referrer.setAttribute("placeholder",data.result.userName)
+     referrer.setAttribute("placeholder",` Referred by:${data.result.userName}`)
     }
   }))
 

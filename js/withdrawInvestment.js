@@ -56,21 +56,21 @@ withdrawBtn.addEventListener("click",async()=>{
 
             //  remove funds
             
-            if(canProceed)
-            fetch(`${apiEntry}/users/update/${userDetails._id}`,{
-                method:"POST",
-                headers:{
-                    "Content-Type":"application/json"
-                },
-                body:JSON.stringify({balance:newBalance})
-            }).then(res=>res.json()).then((data)=>{
-                if(data.success){
-                    alert("Your application has been sent successfully")
-                    window.location.assign('dashboard.html')
-                }else{
+            // if(canProceed)
+            // fetch(`${apiEntry}/users/update/${userDetails._id}`,{
+            //     method:"POST",
+            //     headers:{
+            //         "Content-Type":"application/json"
+            //     },
+            //     body:JSON.stringify({balance:newBalance})
+            // }).then(res=>res.json()).then((data)=>{
+            //     if(data.success){
+            //         alert("Your application has been sent successfully")
+            //         window.location.assign('dashboard.html')
+            //     }else{
 
-                }
-            })
+            //     }
+            // })
         }
     }
 })
